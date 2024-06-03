@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de humidade</title>
+    <link rel="icon" href="./assets/15264517-icone-de-balanca-mecanica-de-cozinha-estilo-de-estrutura-de-topicos-vetor-removebg-preview.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h2 id="insert">Calculo de humidade</h2>
+        <form id="calculoForm">
+            <div class="input-field">
+                <input type="number" name="humidade" id="humidade" step="any" autocomplete="off" required placeholder="humidade" class="txt">
+                <div class="underline"></div>
+            </div>
+            <div class="input-field">
+                <input type="number" name="quantsaca" id="quantsaca" step="any" autocomplete="off" required placeholder="quantidade de sacas" class="txt">
+                <div class="underline"></div>
+            </div>
+            <div class="input-field">
+                <input type="number" name="peso" id="peso" step="any" autocomplete="off" required placeholder="peso" class="txt">
+                <div class="underline"></div>
+            </div>
+            <button type="submit" id="botao" class="meu-botao1">Calcular</button>
+        </form>
+        <p id="resultado" class="resp">
+            <span id="humidadeRotulo">Humidade (após subtração): </span><span id="humidadeResultado" class="resp"></span><br>
+            <span id="quantsacaRotulo">Desconto por sacas: </span><span id="quantsacaResultado" class="resp"></span><br>
+            <span id="pesoRotulo">Peso final (após desconto): </span><span id="pesoResultado" class="resp"></span><br>
+            <span id="quantidadeSacasRotulo">Quantidade de sacas: </span><span id="quantidadeSacasResultado" class="resp"></span>
+        </p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
